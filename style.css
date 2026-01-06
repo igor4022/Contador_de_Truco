@@ -21,8 +21,7 @@ dl {
 }
 
 section {
-    display: flex;
-    padding-bottom: 170px;
+    padding-bottom: 200px;
     background-color: rgb(137, 240, 100);
 }
 
@@ -38,12 +37,23 @@ div {
     text-align: center;
 }
 
+.vencedor {
+    color: blueviolet;
+}
+
+.vencedor2 {
+    color: blueviolet;
+}
+
 h1 {
     font-family: 'Courier New', Courier, monospace;
     margin: auto;
     text-align: center;
 }
 
+.jogadores {
+    display: flex;
+}
 
 p {
     font-size: 70px;
@@ -62,4 +72,5 @@ footer {
     position: relative;
     background-color: rgb(20, 20, 20);
     color: aliceblue;
+    padding: 20px;
 }
