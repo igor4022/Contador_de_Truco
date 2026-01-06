@@ -5,7 +5,8 @@ const criaNos = document.createElement('p')
 
 const titulo = document.querySelector('.titulo')
 const texto = document.createElement('p')
-const venci = document.querySelectorAll('.vencedor')
+const venci = document.querySelector('.vencedor')
+const venci2 = document.querySelector('.vencedor2')
 
 let e = 0
 let n = 0
@@ -37,7 +38,7 @@ function pontoNos() {
     if (n >= 12) {
 
         texto.innerHTML = 'Vencedor'
-        texto.classList.add('venci')
+        texto.classList.add('venci2')
         titulo.appendChild(texto)
         console.log(texto)
 
