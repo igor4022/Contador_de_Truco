@@ -74,3 +74,16 @@ footer {
     color: aliceblue;
     padding: 20px;
 }
+@media (min-width: 920px) {
+    
+    p {
+        margin-left: 50px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    p {
+        margin-left: 100px;
+    }
+}
