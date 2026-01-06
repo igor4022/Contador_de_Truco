@@ -26,7 +26,7 @@ section {
 }
 
 div {
-    padding-left: 20%;
+    padding-left: 15%;
     text-align: center;
     font-size: 30px;
 }
@@ -77,13 +77,13 @@ footer {
 @media (min-width: 920px) {
     
     p {
-        margin-left: 50px;
+        margin-left: 100px;
     }
 }
 
 @media (min-width: 1200px) {
 
     p {
-        margin-left: 100px;
+        margin-left: 150px;
     }
 }
