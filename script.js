@@ -4,11 +4,11 @@ const criaEles = document.createElement('p')
 const criaNos = document.createElement('p')
 
 const titulo = document.querySelector('.titulo')
-const texto = document.createElement('p')
+const texto = document.createElement('img')
 const venci = document.querySelector('.vencedor')
 const venci2 = document.querySelector('.vencedor2')
 
-let e = 0
+let e = 12
 let n = 0
 
 function pontoEles() {
@@ -20,7 +20,7 @@ function pontoEles() {
 
     if (e >= 12) {
 
-        texto.innerHTML = 'Vencedor'
+        texto.src = 'imagens/GGDtGL.gif'
         texto.classList.add('venci')
         venci.appendChild(texto)
         console.log(texto)
