@@ -25,7 +25,7 @@ function pontoEles() {
         venci.appendChild(texto)
         console.log(texto)
 
-    }
+    } 
 }
 
 function pontoNos() {
@@ -50,9 +50,8 @@ eles.addEventListener('click', pontoEles)
 nos.addEventListener('click', pontoNos)
 
 const trucado = document.querySelector('.trucado')
-const botao = document.querySelector('button')
+const botao = document.querySelector('.truco')
 const valor = document.createElement('p')
-const truco = document.querySelector('.truco')
 
 let ponto = 3
 
@@ -62,6 +61,12 @@ function trucar() {
     valor.classList.add('trucado')
     trucado.appendChild(valor)
     console.log(valor)
+
+    if (botao) {
+        e += 2
+        n += 2
+        botao.removeChil(ponto)
+    }
 }
 
 botao.addEventListener('click', trucar)
