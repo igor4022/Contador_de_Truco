@@ -80,6 +80,31 @@ p {
     color: brown;
 }
 
+.truco {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 30px;
+    right: 270px;
+    top: 250px;
+    border-radius: 5px;
+    box-shadow: 0px 7px 10px 0px;
+}
+
+.truco:hover {
+    color: rgb(255, 255, 255);
+    background-color: brown;
+}
+
+.trucado {
+    position: relative;
+    right: 200px;
+    top: 100px;
+    color: aqua;
+}
+
 footer {
     position: relative;
     background-color: rgb(20, 20, 20);
@@ -92,11 +117,19 @@ footer {
     p {
         margin-left: 100px;
     }
+
+    .truco {
+        right: 40%;
+    }
 }
 
 @media (min-width: 1200px) {
 
     p {
         margin-left: 150px;
+    }
+
+    .truco {
+        right: 35%;
     }
 }
