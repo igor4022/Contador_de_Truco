@@ -6,11 +6,9 @@ const criaNos = document.createElement('p')
 const titulo = document.querySelector('.titulo')
 const texto = document.createElement('img')
 const venci = document.querySelector('.vencedor')
-const venci2 = document.querySelector('.vencedor2')
 
-let e = 12
-let n = 0
-
+let e = 0
+let n = 12
 function pontoEles() {
 
     criaEles.innerHTML = ++e
@@ -20,7 +18,7 @@ function pontoEles() {
 
     if (e >= 12) {
 
-        texto.src = 'imagens/GGDtGL.gif'
+        texto.src = 'imagens/truco2.gif'
         texto.classList.add('venci')
         venci.appendChild(texto)
         console.log(texto)
@@ -37,7 +35,7 @@ function pontoNos() {
 
     if (n >= 12) {
 
-        texto.innerHTML = 'Vencedor'
+        texto.src = 'imagens/GGDtGL.gif'
         texto.classList.add('venci2')
         titulo.appendChild(texto)
         console.log(texto)
