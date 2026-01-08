@@ -52,7 +52,7 @@ function pontoNos() {
 }
 
 const nomeEles = document.querySelector('.nomeEles')
-let elemento = 1
+const nomeNos = document.querySelector('.nomeNos')
 
 function tirarEles() {
     
@@ -63,7 +63,7 @@ function tirarEles() {
 
 function tirarNos() {
 
-    nos.appendChild(criaNos)
+    nos.removeChild(criaNos)
     console.log(criaNos)
     --n
 }
@@ -71,6 +71,7 @@ function tirarNos() {
 eles.addEventListener('click', pontoEles)
 nos.addEventListener('click', pontoNos)
 nomeEles.addEventListener('click', tirarEles)
+nomeNos.addEventListener('click', tirarNos)
 
 // Botão de truco...
 
