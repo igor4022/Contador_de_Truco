@@ -1,3 +1,5 @@
+// Contador de placar...
+
 const eles = document.querySelector('.eles')
 const nos = document.querySelector('.nos')
 const criaEles = document.createElement('p')
@@ -10,6 +12,7 @@ const perdi = document.querySelector('.perdedor')
 
 let e = 0
 let n = 0
+let somVitoria = new Audio('video/truco2_.mp4')
 
 function pontoEles() {
 
@@ -24,6 +27,7 @@ function pontoEles() {
         texto.classList.add('venci')
         venci.appendChild(texto)
         console.log(texto)
+        somVitoria.play()
 
     } 
 }
@@ -49,11 +53,14 @@ function pontoNos() {
 eles.addEventListener('click', pontoEles)
 nos.addEventListener('click', pontoNos)
 
+// Botão de truco...
+
 const trucado = document.querySelector('.trucado')
 const botao = document.querySelector('.truco')
 const valor = document.createElement('p')
 
 let ponto = 3
+let somTruco = new Audio('video/Pediu_truco.mp4')
 
 function trucar() {
 
@@ -61,6 +68,7 @@ function trucar() {
     valor.classList.add('trucado')
     trucado.appendChild(valor)
     console.log(valor)
+    somTruco.play()
 
     if (botao) {
         e += 2
