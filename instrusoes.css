@@ -46,3 +46,8 @@ p {
     margin: 30px;
     color: rgb(234, 234, 234);
 }
+
+p:hover {
+    font-size: 20px;
+    color: rgb(244, 255, 223);
+}

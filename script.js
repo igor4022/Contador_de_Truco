@@ -12,6 +12,7 @@ const perdi = document.querySelector('.perdedor')
 
 let e = 0
 let n = 0
+
 let somVitoria = new Audio('video/truco2_.mp4')
 
 function pontoEles() {
@@ -45,13 +46,31 @@ function pontoNos() {
         texto.classList.add('perdi')
         perdi.appendChild(texto)
         console.log(texto)
+        somVitoria.play()
 
     }
 }
 
+const nomeEles = document.querySelector('.nomeEles')
+let elemento = 1
+
+function tirarEles() {
     
+    eles.removeChild(criaEles)
+    console.log(criaEles)
+    --e
+}
+
+function tirarNos() {
+
+    nos.appendChild(criaNos)
+    console.log(criaNos)
+    --n
+}
+   
 eles.addEventListener('click', pontoEles)
 nos.addEventListener('click', pontoNos)
+nomeEles.addEventListener('click', tirarEles)
 
 // Botão de truco...
 
