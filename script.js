@@ -56,16 +56,13 @@ const nomeNos = document.querySelector('.nomeNos')
 
 function tirarEles() {
     
-    eles.removeChild(criaEles)
-    console.log(criaEles)
-    --e
+    criaEles.innerHTML = --e
+    
 }
 
 function tirarNos() {
 
-    nos.removeChild(criaNos)
-    console.log(criaNos)
-    --n
+    criaNos.innerHTML = --n
 }
    
 eles.addEventListener('click', pontoEles)
@@ -82,7 +79,20 @@ const valor = document.createElement('p')
 let ponto = 3
 let somTruco = new Audio('video/Pediu_truco.mp4')
 
-function trucar() {
+function trucarEles() {
+
+    valor.innerHTML = ponto
+    valor.classList.add('trucado')
+    trucado.appendChild(valor)
+    console.log(valor)
+    somTruco.play()
+  
+    if (eles = 'click') {
+        e += 2
+    }
+}
+
+function trucarNos() {
 
     valor.innerHTML = ponto
     valor.classList.add('trucado')
@@ -90,11 +100,10 @@ function trucar() {
     console.log(valor)
     somTruco.play()
 
-    if (botao) {
-        e += 2
-        n += 2
-        botao.removeChil(ponto)
+    if (botao && nos) {
+         n += 2
     }
 }
 
-botao.addEventListener('click', trucar)
+botao.addEventListener('click', trucarEles)
+botao.addEventListener('click', trucarNos)
