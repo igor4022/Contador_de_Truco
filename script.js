@@ -29,8 +29,7 @@ function pontoEles() {
         venci.appendChild(texto)
         console.log(texto)
         somVitoria.play()
-
-    } 
+    }
 }
 
 function pontoNos() {
@@ -76,34 +75,19 @@ const trucado = document.querySelector('.trucado')
 const botao = document.querySelector('.truco')
 const valor = document.createElement('p')
 
-let ponto = 3
+let ponto = 1
 let somTruco = new Audio('video/Pediu_truco.mp4')
 
 function trucarEles() {
 
-    valor.innerHTML = ponto
+    valor.innerHTML = ponto * 3
     valor.classList.add('trucado')
     trucado.appendChild(valor)
     console.log(valor)
     somTruco.play()
-  
-    if (eles = 'click') {
+    
         e += 2
-    }
-}
-
-function trucarNos() {
-
-    valor.innerHTML = ponto
-    valor.classList.add('trucado')
-    trucado.appendChild(valor)
-    console.log(valor)
-    somTruco.play()
-
-    if (botao && nos) {
-         n += 2
-    }
-}
+        n += 2
+    } 
 
 botao.addEventListener('click', trucarEles)
-botao.addEventListener('click', trucarNos)
