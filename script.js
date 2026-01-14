@@ -75,6 +75,11 @@ const trucado = document.querySelector('.trucado')
 const botao = document.querySelector('.truco')
 const valor = document.createElement('p')
 
+const pontosNos = document.createElement('button')
+const pontosEles = document.createElement('button')
+const elesPontua = document.querySelector('.elesPontua')
+const nosPontua = document.querySelector('.nosPontua')
+
 let ponto = 1
 let somTruco = new Audio('video/Pediu_truco.mp4')
 
@@ -85,9 +90,26 @@ function trucarEles() {
     trucado.appendChild(valor)
     console.log(valor)
     somTruco.play()
-    
-        e += 2
-        n += 2
-    } 
+
+    pontosEles.innerHTML = 'pontuar'
+    pontosEles.classList.add('elesPontua')
+    elesPontua.appendChild(pontosEles)
+    console.log(pontosEles)
+
+    pontosNos.innerHTML = 'pontuar'
+    pontosNos.classList.add('nosPontua')
+    nosPontua.appendChild(pontosNos)
+    console.log(pontosNos)
+} 
+
+function btnPontosEles() {
+    e += 2
+}
+
+function btnPontosNos() {
+    n += 2
+}
 
 botao.addEventListener('click', trucarEles)
+pontosEles.addEventListener('click', btnPontosEles)
+pontosNos.addEventListener('click', btnPontosNos)
