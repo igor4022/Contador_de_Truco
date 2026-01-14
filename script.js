@@ -13,7 +13,7 @@ const perdi = document.querySelector('.perdedor')
 let e = 0
 let n = 0
 
-let somVitoria = new Audio('video/truco2_.mp4')
+const somVitoria = new Audio('video/truco2_.mp4')
 
 function pontoEles() {
 
@@ -81,7 +81,9 @@ const elesPontua = document.querySelector('.elesPontua')
 const nosPontua = document.querySelector('.nosPontua')
 
 let ponto = 1
-let somTruco = new Audio('video/Pediu_truco.mp4')
+
+const somTruco = new Audio('video/Pediu_truco.mp4')
+const somPonto = new Audio('video/Recebe_o_Truco.mp4')
 
 function trucarEles() {
 
@@ -104,6 +106,7 @@ function trucarEles() {
 
 function btnPontosEles() {
     e += 2
+    somPonto.play()
 }
 
 function btnPontosNos() {
