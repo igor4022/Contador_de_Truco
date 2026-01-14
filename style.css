@@ -71,15 +71,23 @@ p {
 
 .eles {
     display: flex;
-    color: rgb(18, 18, 18);
     margin-bottom: 0px;
     cursor: pointer;
+    margin-left: 7px;
 }
 
 .nos {
     display: flex;
     margin-bottom: 0px;
     cursor: pointer;
+    margin-left: 7px;
+}
+
+.nape {
+    width: 60px;
+    height: 70px;
+    left: -20px;
+    top: -10px;
 }
 
 .nomes2 {
@@ -109,7 +117,8 @@ p {
     position: relative;
     right: 250px;
     top: 100px;
-    color: aqua;
+    color: rgb(0, 255, 255);
+    cursor: auto;
 }
 
 .elesPontua {
@@ -118,7 +127,8 @@ p {
     top: 100px;
     margin: 10px;
     font-size: 20px;
-    color: rgb(13, 58, 58);
+    color: rgb(13, 58, 58);;
+    cursor: pointer;
 }
 
 .nosPontua {
@@ -128,6 +138,7 @@ p {
     margin: 10px;
     font-size: 20px;
     color: rgb(13, 58, 58);
+    cursor: pointer;
 }
 
 footer {

@@ -113,3 +113,5 @@ function btnPontosNos() {
 botao.addEventListener('click', trucarEles)
 pontosEles.addEventListener('click', btnPontosEles)
 pontosNos.addEventListener('click', btnPontosNos)
+
+// 

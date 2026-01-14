@@ -5,6 +5,22 @@
     margin: 0px;
 }
 
+.animacao {
+    animation: show .5s forwards;
+}
+
+@keyframes show {
+    from{
+        opacity: 0;
+        transform: translate3d(-35px, 0, 0);
+    }    
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
 body {
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: rgb(33, 33, 33);
